@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-weight: 100;/**to make text thinner*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;/* make body margin 0 and  then use below to make whole body background color to my prefer color */
+    background-color: rgb( 230,218,206 );
+}
+
+/* remove magin from the following element globally*/
+h1,h2,p{
+    margin: 0;
+}
+
+h1,h2{
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;/*this is to keep main in center*/
+    background-color: white;
+    padding: 0 1em;
+    width: 70%;/*Instead of full width, I set it to 70% corresponsing to its parent*/
+}
+
+section h2
+{
+    text-align: center;
+}
+
+.row{
+    display: flex;
+}
+/****
+    *display two column horizontally. This is also a responsive setting.
+*/
+.col{
+    width: 50%;
+}

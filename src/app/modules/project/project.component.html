@@ -1,0 +1,130 @@
+<main id="project">
+  <div id="projects">
+    <h1>PROJECTS</h1>
+    <hr>
+    <div *ngIf="x==0"
+         id="project1">
+      <div class="subtitle">
+        <h2>Personal Portfolio</h2> <!-- title of the project -->
+        <h2>Nov. 2023</h2><!-- date of the project -->
+      </div>
+      <p>
+        A web application with 4 web pages including home, resume, projects, and
+        contact.<!-- description of the project -->
+      </p>
+      <ul>
+        <li>
+          Implemented Wireframe and Sitemap for the application.
+        </li>
+        <li>
+          Implemented the web pages.
+        </li>
+      </ul>
+      <p><b>Tech Stack: </b>HTML5, CSS3 and JavaScript</p>
+      <div class="picture">
+        <img src="../../../assets/imgs/project1.png"
+             alt="project1 image">
+      </div>
+    </div>
+    <div *ngIf="x==1"
+         id="project2">
+      <div class="subtitle">
+        <h2>Apartment Inspection Scheduling System</h2><!-- title of the project -->
+        <h2>Oct. 2023</h2><!-- date of the project -->
+      </div>
+      <p>A form application to help an inspection company on scheduling<!-- description of the project -->
+        and reporting inspections with one main navigation form, 5 forms
+        for each data table along with sub-forms.
+      </p>
+      <ul>
+        <li>
+          Used MS Access to design and implement a relational database
+          with 7 tables including building, apartment, inspector, inspection,
+          smoke inspection, pet cleaning inspection, water leak inspection.
+        </li>
+        <li>
+          Used MS Access to implement a form application with multiple forms
+          including main menu form with its sub-forms, building form
+          with its sub-forms, inspector form, inspection form with its sub-forms,
+          report form with its sub-forms; Used Macro and VB to
+          achieve the functionalities
+        </li>
+        <li>
+          Conducted database backup and restore.
+        </li>
+        <li>
+          Migrate database from MS Access to MS SQL Server
+        </li>
+      </ul>
+      <p><b>Tech Stack: </b>MS Access, SQL, Macro, VBA</p>
+      <div class="gallery">
+        <img src="../../../assets/imgs/main_nav.png"
+             alt="Access main navigation">
+        <img src="../../../assets/imgs/inspection.png"
+             alt="Access inspection form">
+      </div>
+    </div>
+    <div *ngIf="x==2"
+         id="project3">
+      <div class="subtitle">
+        <h2>Restaurant Online Order</h2><!-- title of the project -->
+        <h2>Aug. 2023</h2><!-- date of the project -->
+      </div>
+      <p>A database product to support a restaurant online order application.</p><!-- description of the project -->
+      <ul>
+        <li>
+          Sketched conceptual database model, logical database model and physical database model.
+        </li>
+        <li>
+          Wrote SQL (DDL, DML)
+        </li>
+        <li>
+          In MySQL, Used DDL to create a relational database with 8 tables including category,
+          dish, topping, employee, customer, order, delivery; Use DML to add, update, query data.
+        </li>
+      </ul>
+      <p><b>Tech Stack: </b>MySQL, SQL (DDL, DML)</p>
+      <div class="gallery">
+        <img src="../../../assets/imgs/menu.png"
+             alt="Benici Pizzaria Menu">
+        <img src="../../../assets/imgs/physical_diagram.png"
+             alt="Order System Physical Diagram">
+      </div>
+    </div>
+    <div *ngIf="x==3"
+         id="project4">
+      <div class="subtitle">
+        <h2>Counting Number</h2><!-- title of the project -->
+        <h2>July 2023</h2><!-- date of the project -->
+      </div>
+      <p>A simple java console application which has a main menu with 4 options,<!-- description of the project -->
+        allowing users to input as many numbers as they want to and giving report on user’s input.
+      </p>
+      <ul>
+        <li>
+          Designed the application with Class diagram, flow chart.
+        </li>
+        <li>
+          Implemented the application with Java.
+        </li>
+        <li>
+          Wrote Junit tests.
+        </li>
+      </ul>
+      <p><b>Tech Stack:</b>OOD, OOP, Java, Junit</p>
+      <div class="picture">
+        <img src="../../../assets/imgs/recorder.png"
+             alt="Air Quality Index Recorder">
+      </div>
+    </div>
+  </div>
+  <div id="projectButtons">
+    <button id="btnPrevious"
+            *ngIf="x==1||x==2||x==3"
+            (click)="previousButtonClick()">Previous</button>
+    <button id="btnNext"
+            *ngIf="x==0||x==1||x==2"
+            (click)="nextButtonClick()">Next</button>
+
+  </div>
+</main>

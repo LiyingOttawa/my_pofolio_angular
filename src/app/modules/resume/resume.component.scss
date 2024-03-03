@@ -1,0 +1,16 @@
+/* resume page */
+div#contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtitle h3{
+    margin: 0;
+}

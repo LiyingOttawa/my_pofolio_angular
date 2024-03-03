@@ -1,0 +1,37 @@
+/* project page */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery img {
+    width: 45%;
+    height: auto;
+}
+/*Once the screen is smallize by user to 700px, the image will show 1 per row instead of 2
+  otherwise, the image will be too tiny*/
+@media screen and (max-width: 700px)  {
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*justify the content to center*/
+.picture {
+    display: flex;
+    justify-content: center;
+}
+/**since project4 only has 1 image, show 1 image in the row.*/
+.picture img {
+    width: 80%;
+    height: auto;
+}
+
+#projectButtons{
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+    justify-content: center;
+}

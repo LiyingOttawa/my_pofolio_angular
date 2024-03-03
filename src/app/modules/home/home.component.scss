@@ -1,0 +1,90 @@
+#profileImage img{
+    width: 10em;
+    height:auto;
+    border-radius: 50%;
+
+    /* border-radius: 50%;
+    border-width: 1px;
+    border-style: double;
+
+    width: fit-content;
+    height: fit-content;
+
+    padding:0.5em; */
+}
+/****
+    *since the content is shot in the folloiwng two main container,
+    *I use function calc() to get enough height to have footer on bottom
+    * I let its content to display in vertical center
+*/
+main#myInformation, main#contactMe
+{
+    height: calc(100vh - 7em);/*100% view point height - footer height*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/****
+    *make the section fit-content,
+    *with this, the section will be right size to display in center
+*/
+main#myInformation section,main#contactMe section
+{
+    height: fit-content;
+}
+
+section h2
+{
+    text-align: center;
+}
+
+.row{
+    display: flex;
+}
+/****
+    *display two column horizontally. This is also a responsive setting.
+*/
+.col{
+    width: 50%;
+}
+
+/*justify all content center for my prefer*/
+#myInfoLeft{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#myInfoLeft p{
+    font-size: 1.2em;
+}
+
+#myInfoRight h2{
+    font-size: 6em;
+}
+
+/*the following is the responsive setting based on 3 different width screen*/
+@media screen and (max-width: 700px)  {
+    #myInfoRight h2{
+        font-size: 5em;
+    }
+}
+
+@media screen and (max-width: 568px)  {
+    #myInfoRight h2{
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 376px)  {
+    #myInfoRight h2{
+        font-size: 2em;
+    }
+}
+
+#myInfoRight h3{
+    font-size: 2em;
+    font-weight: 10;
+}

@@ -1,0 +1,55 @@
+/* nav*/
+ /*** nav has ul justified end for my prefer  */
+ nav {
+    padding: 0.1em 1em;
+    font-size: large;
+    background-color: #f2f0f0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav>h2{
+    display: none;
+}
+
+ /*** ul lists links horizotally
+    * remove the list stye- no dot on left  */
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 568px)  {
+    nav>h2{
+        display: block;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+}
+
+ /*** Each nav link keep a good distance by padding
+    * the underline is removed
+ */
+nav ul a {
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+}
+
+ /*** Each nav link's background color will be changed when mouse hover
+ */
+nav ul a:hover {
+    background-color: antiquewhite;
+}
+
+ /*** When a nav link is classify as active, change the text color
+ */
+nav ul a.active {
+    color: goldenrod;
+}
